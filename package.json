@@ -1,0 +1,43 @@
+{
+  "name": "digital-nirbachon-2026",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "tsx watch server/index.ts",
+    "server:new": "tsx watch src/server.ts",
+    "server:test": "tsx watch src/testServer.ts",
+    "backend:dev": "nodemon backend/index.js",
+    "backend:start": "node backend/index.js",
+    "seed:votes": "node backend/seedVotes.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run server\"",
+    "dev:all:new": "concurrently \"npm run dev\" \"npm run server:new\"",
+    "dev:all:test": "concurrently \"npm run dev\" \"npm run server:test\""
+  },
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^13.6.0",
+    "helmet": "^8.1.0",
+    "lucide-react": "^0.559.0",
+    "mongoose": "^9.0.1",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "recharts": "^3.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "nodemon": "^3.1.11",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}

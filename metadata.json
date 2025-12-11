@@ -1,0 +1,7 @@
+{
+  "name": "Digital Nirbachon 2026",
+  "description": "A secure, transparent, and villager-friendly online voting system for Bangladesh using Google Authentication and Device Fingerprinting.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,318 @@
+# ===========================================
+# DIGITAL NIRBACHON 2026 - SECURE GITIGNORE
+# ===========================================
+
+# ===========================================
+# DOCUMENTATION FILES
+# ===========================================
+# Ignore all markdown files except README.md
+*.md
+!README.md
+
+# ===========================================
+# ENVIRONMENT VARIABLES & SECURITY
+# ===========================================
+# All environment files - CRITICAL for security
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+
+# Backend environment files
+backend/.env
+backend/.env.*
+backend/.env.local
+backend/.env.production
+
+# Template files (ensure no real secrets)
+.env.template
+.env.example
+backend/.env.template
+backend/.env.example
+
+# Firebase security files
+firebase-debug.log*
+firebase-debug.*
+firestore-debug.log*
+ui-debug.log*
+.firebase/
+firebase-service-account.json
+firebase-admin-key.json
+serviceAccountKey.json
+
+# Security certificates and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+private-key.pem
+public-key.pem
+secrets/
+credentials/
+admin/
+service-accounts/
+api-keys.json
+tokens.json
+access-tokens.json
+
+# ===========================================
+# BUILD & DEPENDENCIES
+# ===========================================
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+dist-ssr/
+*.tgz
+*.tar.gz
+
+# Package manager files (KEEP package-lock.json for production)
+yarn.lock
+pnpm-lock.yaml
+.pnpm-store/
+
+# ===========================================
+# DEVELOPMENT & TESTING
+# ===========================================
+# IDE and editor files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Cache directories
+.cache/
+.parcel-cache/
+.npm/
+.eslintcache
+.stylelintcache
+
+# Coverage and test files
+coverage/
+*.lcov
+.nyc_output
+test-results/
+test-output/
+playwright-report/
+
+# ===========================================
+# OPERATING SYSTEM FILES
+# ===========================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+Icon
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===========================================
+# DATABASES & STORAGE
+# ===========================================
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+database.sql
+database.sqlite
+database.db
+
+# MongoDB specific
+data/
+db/
+mongodb-data/
+mongodb-backup/
+mongodump/
+
+# ===========================================
+# TEMPORARY & LOG FILES
+# ===========================================
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Temporary folders
+tmp/
+temp/
+
+# ===========================================
+# FRAMEWORK SPECIFIC
+# ===========================================
+# Vite
+*.local
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# React
+.react/
+.react-app/
+.react-build/
+
+# Parcel
+.parcel-cache/
+
+# Storybook
+.out/
+.storybook-out/
+
+# ===========================================
+# CLOUD & DEPLOYMENT
+# ===========================================
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# Serverless
+.serverless/
+
+# DynamoDB
+.dynamodb/
+
+# ===========================================
+# PROJECT SPECIFIC
+# ===========================================
+# Cleanup backup folder (from cleanup process)
+cleanup_backup/
+
+# Project specific directories
+ballots/
+voter-data/
+election-results/
+admin-logs/
+user-files/
+uploads/
+files/
+
+# Application config (local/development only)
+config/local.json
+config/development.json
+config/secrets.json
+
+# ===========================================
+# SECURITY & SENSITIVE
+# ===========================================
+# API documentation with real endpoints
+API_DOCUMENTATION.md
+
+# Implementation details
+FINAL_SUMMARY.md
+IMPLEMENTATION_COMPLETE.md
+
+# Debug and test files
+checkAllDBs.js
+debugRoutes.js
+simpleSeed.js
+simpleTest.js
+testMongoDB.js
+moveVotesToNirbachon.js
+seedVotes.js
+
+# ===========================================
+# BACKEND SPECIFIC (Node.js/Express)
+# ===========================================
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# ===========================================
+# ADDITIONAL SECURITY
+# ===========================================
+# JetBrains IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.#*
+
+# TernJS
+.tern-port
+
+# VSCode testing
+.vscode-test
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ===========================================
+# COMPRESSED FILES
+# ===========================================
+*.tar
+*.zip
+*.rar
+*.7z
+
+# ===========================================
+# FINAL CHECK - DEPLOYMENT SAFETY
+# ===========================================
+# Ensure no sensitive files accidentally committed
+# - No real API keys
+# - No database passwords
+# - No private certificates
+# - No user data
+# - No election results before public release
+# - No admin credentials
+
+# ===========================================
+# END OF GITIGNORE
+# ===========================================

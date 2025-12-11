@@ -1,0 +1,29 @@
+{
+  "name": "digital-nirbachon-2026-backend",
+  "version": "1.0.0",
+  "description": "Digital Nirbachon 2026 Voting System Backend API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node seedVotes.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "firebase": "^12.6.0",
+    "firebase-admin": "^13.6.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
